@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="aset/bootstrap/css/bootstrap.min.css">
+   <title>Password Generator | Eri Maulana</title>
+</head>
+<body>
+   <div class="container d-flex justify-content-center align-items-center min-vh-100">
+      <div class="d-flex flex-column">
+         <h1 class="text-center">Password Generator <br> <strong>Eri Maulana</strong></h1>
+         <form action="" class="d-flex flex-column gap-2 mt-4">
+            <div class="form-group ">
+               <label for="passwordLength">Panjang Password</label>
+               <input type="number" id="passwordLength" class="form-control" name="passwordLength" >
+            </div>
+            <div class="form-group ">
+               <label for="password">Password</label>
+               <input type="text" id="password" class="form-control bg-light" name="password" disabled >
+            </div>
+            <button type="button" onclick="getPassword()" class="btn btn-dark btn-lg text-white mt-2">GENERATE PASSWORD</button>
+            <a type="button" id="saveButton" onclick="savePassword()" class="btn btn-primary btn-lg text-white mt-2">SAVE PASSWORD</a>
+         </form>
+      </div>
+
+   </div>
+   
+   <script src="aset/bootstrap/js/bootstrap.min.js"></script>
+   <script src="script.js"></script>
+</body>
+</html>
